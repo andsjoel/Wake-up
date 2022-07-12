@@ -5,4 +5,4 @@ Este é um pequeno projeto de estudo pessoal. Utilizando de vídeos aulas e bibl
 ##DOM é prática! 
 
 
-Olhe o [GitHub Pages](https://pages.github.com/) deste projeto! Está bem interativo. 
+Olhe o [GitHub Pages](https://andsjoel.github.io/Wake-up/) deste projeto! Está bem interativo. 
