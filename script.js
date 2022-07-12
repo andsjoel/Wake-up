@@ -4,6 +4,7 @@ const itp = document.getElementById('interruptor');
 const bg = document.getElementById('background');
 const porta = document.getElementById('porta');
 const texto = document.getElementById('text')
+const zzz = document.getElementById('zzz');
 
 
 const load = "Shhhhh... Pedrinho está dormindo... WTF!!! O que é aquilo? Melhor dar um pouco de privacidade para ele."
@@ -49,6 +50,8 @@ itp.addEventListener('click', function () {
 
         escreverTexto (turnOn)
 
+        zzz.style.display = 'none'
+
     } else {
         bg.setAttribute('src','img/lampoff.jpeg')
         bg.classList.add('off')
@@ -56,6 +59,8 @@ itp.addEventListener('click', function () {
         styleElem.setAttribute('href', 'styleOff.css')
 
         escreverTexto(' ')
+
+        zzz.style.display = 'block'
     }
 })
 
