@@ -23,7 +23,7 @@ function escreverTexto (elemento) {
     textArray.forEach((letra, i) => {
         setTimeout(function(){
             text.innerHTML += letra
-        }, 50*i)
+        }, 40*i)
     })
 }
 
@@ -43,20 +43,20 @@ document.addEventListener('touchmove', lanterna);
 
 itp.addEventListener('click', function () {
     if(bg.classList == 'off'){
-        bg.setAttribute('src', 'img/lampon.jpeg')
+        bg.setAttribute('src', 'assets/img/lampon.jpeg')
         bg.classList.remove('off')
 
-        styleElem.setAttribute('href', 'styleOn.css')
+        styleElem.setAttribute('href', 'assets/style/styleOn.css')
 
         escreverTexto (turnOn)
 
         zzz.style.display = 'none'
 
     } else {
-        bg.setAttribute('src','img/lampoff.jpeg')
+        bg.setAttribute('src','assets/img/lampOff.jpeg')
         bg.classList.add('off')
 
-        styleElem.setAttribute('href', 'styleOff.css')
+        styleElem.setAttribute('href', 'assets/style/styleOff.css')
 
         escreverTexto(' ')
 
