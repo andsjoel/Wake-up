@@ -1,20 +1,22 @@
 // itp = interruptor
 
+
+//variaveis
 const itp = document.getElementById('interruptor');
 const bg = document.getElementById('background');
 const porta = document.getElementById('porta');
 const texto = document.getElementById('text')
 const zzz = document.getElementById('zzz');
+const styleElem = document.getElementById('linkCss');
 
-
+// criando constantes de texto.
 const load = "Shhhhh... Pedrinho está dormindo... WTF!!! O que é aquilo? Melhor dar um pouco de privacidade para ele."
 const portaTrancada = "A porta está trancada!"
 const turnOn = '"Só mais 5 minutinhos, mãe."'
 
-
-const styleElem = document.getElementById('linkCss');
-
-
+// Função que recebe o elemento de texto e transforma ele num array pelo forEach
+// setTimeout aceita uma função e um tempo para executar essa função
+// 
 function escreverTexto (elemento) {
 
     const textArray = elemento.split('');
@@ -29,7 +31,8 @@ function escreverTexto (elemento) {
 
 window.onload = escreverTexto(load)
 
-
+// Função para fazer com que a luz siga o mouse
+// muda a variável criado no root CSS
 function lanterna(event){
     let x = event.clientX || event.touches[0].clientX
     let y = event.clientY || event.touches[0].clientY
@@ -39,7 +42,7 @@ function lanterna(event){
 }
 
 document.addEventListener('mousemove', lanterna);
-document.addEventListener('touchmove', lanterna);
+
 
 itp.addEventListener('click', function () {
     if(bg.classList == 'off'){
@@ -53,7 +56,7 @@ itp.addEventListener('click', function () {
         zzz.style.display = 'none'
 
     } else {
-        bg.setAttribute('src','assets/img/lampoff.jpeg')
+        bg.setAttribute('src','assets/img/lampOff.jpeg')
         bg.classList.add('off')
 
         styleElem.setAttribute('href', 'assets/style/styleOff.css')
