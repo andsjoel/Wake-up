@@ -1,3 +1,13 @@
+/* Usei o :root para representar o document/ elemento html, assim conseguiria 
+aplicar a escuridão a todo o documento. Então, conseguiria dar "profundidade"
+pelo z-index
+
+Pq usei dois style.css? Como usei o :root para personalizar, não achei uma forma
+de acessar essa pseudo-classe pelo DOM. Mas achei uma maneira de acessar o link 
+do style através da TAG html > head > link, assim conseguiria mudar um atributo.
+Então quando clico para ligar e desligar luz, mudo o href do link style. Veja
+na linha 49 e 59 do script.*/
+
 :root {
     /* cursor: none; */
     --cursorX: 50vw;
