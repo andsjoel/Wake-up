@@ -56,7 +56,7 @@ itp.addEventListener('click', function () {
         zzz.style.display = 'none'
 
     } else {
-        bg.setAttribute('src','assets/img/lampOff.jpeg')
+        bg.setAttribute('src','assets/img/lampoff.jpeg')
         bg.classList.add('off')
 
         styleElem.setAttribute('href', 'assets/style/styleOff.css')
